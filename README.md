@@ -26,6 +26,8 @@ Welcome to **HealthCare Google AI**, your intelligent assistant for generating *
 ---
 Preview
 [Google Drive] (https://drive.google.com/drive/folders/1EcoVhWWbtt9JqQZ_bvb0rnz3o_KJxatR?usp=sharing)
+
+
 ---
 
 ## 🛠️ Tech Stack
@@ -40,5 +42,5 @@ Preview
 
 ---
 
-## 📂 Project Structure
+
 
