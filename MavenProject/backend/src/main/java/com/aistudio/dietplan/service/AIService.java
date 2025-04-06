@@ -10,7 +10,7 @@ import java.util.*;
 @Service
 public class AIService {
 
-    private final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=AIzaSyCsNKmQq0okHwInFrP4w8fNPFp88uuGkZ0";
+    private final String API_URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key={YOUR_API_KEY}";
 
     @Autowired
     private RestTemplate restTemplate;
