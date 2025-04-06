@@ -24,13 +24,8 @@ Welcome to **HealthCare Google AI**, your intelligent assistant for generating *
   Maven-based structure with extensible packages for future microservice scaling.
 
 ---
-
-## 🖼️ Preview
-
-> 📌 *"Enter your health data → Click Submit → Get your customized AI-powered dietary plan!"*
-
-![App Screenshot](https://github.com/Amrutag2/HealthCare_GoogleAI/assets/screenshot-placeholder.png)
-
+Preview
+[Google Drive] (https://drive.google.com/drive/folders/1EcoVhWWbtt9JqQZ_bvb0rnz3o_KJxatR?usp=sharing)
 ---
 
 ## 🛠️ Tech Stack
