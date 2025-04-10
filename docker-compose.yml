@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  backend:
+    build:
+      context: ./MavenProject/backend
+    ports:
+      - "8080:8080"
+    container_name: healthcare-backend
+    networks:
+      - healthcare-net
+
+  frontend:
+    build:
+      context: ./healthcare
+    ports:
+      - "3000:80"
+    container_name: healthcare-frontend
+    depends_on:
+      - backend
+    networks:
+      - healthcare-net
+
+networks:
+  healthcare-net:
+    driver: bridge

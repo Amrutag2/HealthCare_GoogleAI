@@ -1,7 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
 
-
 const conditions = ["High Blood Pressure", "PCOS", "PCOD", "Thyroid", "Blood Sugar"];
 const goals = ["Weight Loss", "Weight Gain", "Maintenance"];
 const activityLevels = ["Low", "Moderate", "High"];
@@ -17,13 +16,15 @@ export default function DietaryPlan() {
 
     const [dietPlan, setDietPlan] = useState(null);
 
+    const API_URL = process.env.REACT_APP_API_URL || "http://localhost:8080";
+
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
     const fetchDietPlan = async () => {
         try {
-            const response = await axios.post("http://localhost:8080/api/diet/diet", formData);
+            const response = await axios.post(`${API_URL}/api/diet/diet`, formData);
             setDietPlan(response.data);
         } catch (error) {
             console.error("Error fetching diet plan:", error);
